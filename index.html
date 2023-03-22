@@ -18,15 +18,22 @@
           <li><a href="#">სერვისები</a></li>
           <li><a href="#">პროექტები</a></li>
           <li><a href="#">პარტნიორები</a></li>
-          <li><a href="#">კონტაქტი</a></li>
+          <li><a href="#" class="contact">კონტაქტი</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <div class="blue-bg"></div>
       <section>
-        <img src="asset/images/Rectangle 91.png" alt="main building" />
-        <h3>რატომ ვიყენებთ მას და საიდან მოდის ეს ტექსტი?</h3>
         <div>
+          <img
+            src="asset/images/Rectangle 91.png"
+            alt="main building"
+            class="main-building"
+          />
+        </div>
+        <h3>რატომ ვიყენებთ მას და საიდან მოდის ეს ტექსტი?</h3>
+        <div class="building_imgs">
           <img src="asset/images/Rectangle 92.png" alt="modern building" />
           <img
             src="asset/images/Rectangle 93.png"
@@ -36,7 +43,7 @@
           <img src="asset/images/Rectangle 95.png" alt="4 Construction" />
           <img src="asset/images/Rectangle 96.png" alt="Skyscraper" />
         </div>
-        <div>
+        <div class="main_p">
           <p>
             ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის
             ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის
@@ -49,7 +56,7 @@
             წლების მანძილზე ამ ტექსტის უამრავი ვერსია გამოჩნდა, ზოგი შემთხვევით
             დაშვებული შეცდომის გამო, ზოგი კი — განზრახ, ხუმრობით.
           </p>
-          <div>
+          <div class="seconedry-main-p">
             <p>
               გავრცელებული მოსაზრებით, Lorem Ipsum შემთხვევითი ტექსტი სულაც
               არაა. მისი ფესვები ჯერკიდევ ჩვ. წ. აღ-მდე 45 წლის დროინდელი
@@ -84,7 +91,7 @@
             შემცველი.
           </p>
         </div>
-        <a href="#">დამატებითი ინფორმაცია</a>
+        <div class="more-info"><a href="#">დამატებითი ინფორმაცია</a></div>
       </section>
     </main>
     <footer>
@@ -99,6 +106,22 @@
             ელ. ფოსტა
             ტელეფონის ნომერი
             შეტყობინება -->
+        <div>
+          <label for="name-surname">სახელი, გვარი</label>
+          <input type="text" name="Name-Surname" id="Name-Surname" />
+        </div>
+        <div>
+          <label for="email">ელ. ფოსტა</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="phone-number">ტელეფონის ნომერი</label>
+          <input type="tel" name="tel" id="tel" />
+        </div>
+        <div>
+          <label for="text-area">შეტყობინება</label>
+          <textarea name="message"></textarea>
+        </div>
         <button></button>
       </div>
       <iframe
